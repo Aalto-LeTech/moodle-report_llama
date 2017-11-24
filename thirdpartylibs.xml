@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<libraries>
+    <library>
+        <location>amd/src/d3.v4.js</location>
+        <name>D3.js</name>
+        <version>4.12.0</version>
+        <license>BSD</license>
+        <licenseversion>3-Clause</licenseversion>
+    </library>
+    <library>
+        <location>amd/src/d3Stream.js</location>
+        <name>d3Stream</name>
+        <version>0.1</version>
+        <license>MIT</license>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>amd/src/llama.js</location>
+        <name>Llama Client</name>
+        <version>0.1</version>
+        <license>MIT</license>
+        <licenseversion></licenseversion>
+    </library>
+</libraries>

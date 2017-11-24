@@ -1,0 +1,77 @@
+<div class="llama-client">
+
+  <div id="llama-unit-select">
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="nav-item placeholder hidden">
+        <a href="#" class="nav-link"></a>
+      </li>
+      <li role="presentation" class="nav-item all">
+        <a href="#all" class="nav-link active">{{#str}}all, report_llama{{/str}}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="llama-view-select">
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="nav-item">
+        <a href="#llama-view-progress" class="nav-link active">{{#str}}collectiveprogress, report_llama{{/str}}</a>
+      </li>
+      <li role="presentation" class="nav-item">
+        <a href="#llama-view-trajectories" class="nav-link">{{#str}}learningtrajectories, report_llama{{/str}}</a>
+      </li>
+      <li role="presentation" class="nav-item">
+        <a href="#llama-view-table" class="nav-link">{{#str}}table, report_llama{{/str}}</a>
+      </li>
+    </ul>
+  </div>
+
+  <!--<p id="llama-filter-tags"></p>-->
+
+  <div id="llama-view-progress" class="llama-view">
+    <div class="llama-detail">
+      <span class="number">N</span> {{#str}}learners, report_llama{{/str}}<br>
+      <span class="submissions">N - N</span> {{#str}}submissions, report_llama{{/str}}<br>
+      <span class="ratio">N% - N%</span> {{#str}}grade, report_llama{{/str}}
+    </div>
+  </div>
+
+  <div id="llama-view-trajectories">
+  </div>
+
+  <div id="llama-view-table">
+    <div class="btn-group">
+      <a class="btn btn-outline-primary btn-sm" href="#">
+        {{#str}}download, report_llama{{/str}}
+      </a>
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">{{#str}}toggledropdown, report_llama{{/str}}</span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <a href="#" class="dropdown-item">{{#str}}openapi, report_llama{{/str}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="llama-view-learners">
+    <div>
+      <button class="btn btn-outline-primary btn-xs">{{#str}}clearselection, report_llama{{/str}}</button>
+    </div>
+    <div class="placeholder hidden llama-beacon">
+      <a href="#">
+        <div class="header">
+          <small>
+            <span class="studentid">123456</span>
+            <span class="name">N. N.</span>
+          </small>
+        </div>
+        <div class="chart">
+          <div class="up"></div>
+          <div class="down"></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</div>
